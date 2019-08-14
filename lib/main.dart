@@ -3,6 +3,25 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Aplikasi Test"),
+        ),
+        body: Center(
+            child: Container(
+                color: Colors.lightBlue,
+                height: 150,
+                width: 50,
+                child: Text("Aplikasi Test", ))),
+      ),
+    );
+  }
+}
+
+/* class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -107,5 +126,5 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-  }
-}
+  } 
+}*/
